@@ -1,0 +1,124 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 20px;
+  position: relative;
+}
+.header.mobile-active {
+  background: #3c495d;
+}
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.header-logo {
+  width: 50px;
+  height: 50px;
+}
+.header-column-text {
+  display: flex;
+  flex-direction: column;
+}
+.header.mobile-active .header-title {
+  color: white;
+}
+.header.mobile-active .fs-xs {
+  color: white;
+}
+.header-title {
+  font-weight: 700;
+  font-size: 30px;
+}
+.header-right {
+  display: flex;
+  max-width: 600px;
+  width: 100%;
+}
+.header-right-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.blue-dot {
+  width: 5px;
+  height: 5px;
+  background: #0d65fb;
+  border-radius: 50%;
+}
+.flex-header-dot {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: flex-end;
+}
+
+.flex-right-with-icons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.icons-social {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.icon-social {
+  width: 45px;
+  height: 45px;
+}
+
+.custom-burger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 22px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.custom-line {
+  height: 3px;
+  background-color: black;
+  border-radius: 2px;
+  transition: all 0.3s ease-in-out;
+}
+
+.custom-burger.active .custom-line:nth-child(1) {
+  width: 30px;
+  transform: translateY(10px) rotate(45deg);
+  background-color: white;
+}
+
+.custom-burger.active .custom-line:nth-child(2) {
+  opacity: 0;
+}
+
+.custom-burger.active .custom-line:nth-child(3) {
+  width: 30px;
+  transform: translateY(-9px) rotate(-45deg);
+  background-color: white;
+}
+
+.header-right-mobile {
+  display: none;
+}
+
+.header-mobile-content {
+  padding: 0 30px 30px;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #3c495d;
+  width: 100%;
+  transform: translateY(-250%);
+  transition: transform 0.3s ease-in-out;
+}
+.header-mobile-content.active{
+  transform: translateY(0%);
+} 

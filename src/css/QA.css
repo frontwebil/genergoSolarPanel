@@ -1,0 +1,106 @@
+.faq {
+  padding: 150px 0;
+  position: relative;
+}
+.faq-container {
+  max-width: 1500px;
+  padding: 0px 30px;
+  margin: 80px auto 0;
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+.faq-container-column {
+  max-width: 700px;
+  border-top: 1px solid #b1b7bf;
+}
+
+.icon {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.icon span {
+  position: absolute;
+  background-color: #f95801;
+  transition: transform 0.3s ease;
+}
+
+.horizontal {
+  width: 22px;
+  height: 3px;
+  border-radius: 5px;
+}
+
+.vertical {
+  width: 3px;
+  height: 22px;
+  border-radius: 5px;
+}
+
+/* Анимация превращения в минус */
+.icon.active .vertical {
+  transform: rotate(90deg);
+}
+
+.icon.active .horizontal {
+  transform: rotate(0deg);
+}
+
+.accordeon {
+  margin-top: 40px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.accordeon-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.accordeon-item {
+  max-width: 700px;
+  width: 100%;
+  /* background: #51515133; */
+  border-bottom: 1px solid #b1b7bf;
+  padding: 20px 0px;
+}
+.accordeon-item-top-button {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordeon-content {
+  /* padding-top: 10px; */
+  overflow: hidden;
+  max-height: 0;
+}
+
+.accordeon-content-text {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.text-info {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.faq-center-button{
+  margin: 50px auto 0;
+}
+
+.up-button{
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+}

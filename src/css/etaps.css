@@ -1,0 +1,85 @@
+.etaps {
+  padding: 0 20px 150px;
+}
+.etaps-container {
+  max-width: 1500px;
+  margin: 50px auto 0;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 20px;
+}
+.etaps-image {
+  max-width: 830px;
+}
+.etaps-info {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  width: 100%;
+  gap: 15px;
+}
+.etaps-row {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  background: #f6f9ff;
+  border-radius: 20px;
+}
+.etaps-row-left {
+  padding: 20px 0 20px 25px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.etaps-row-left-num {
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  color: #1670fa;
+}
+.etaps-row-left-text {
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0%;
+}
+.etaps-row-right {
+  max-width: 120px;
+  width: 100%;
+  background: #f95801;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  border-radius: 20px;
+}
+.etaps-row-right-icon {
+  width: 18px;
+  height: 18px;
+}
+.etaps-row-right-text {
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+}
+
+.etaps-order-now {
+  background: linear-gradient(91.78deg, #1670fa 1.51%, #0d65fb 100.99%);
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.etaps-order-now p {
+  font-weight: 500;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.etaps-order-now:hover {
+  background: #f95801;
+}

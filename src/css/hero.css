@@ -1,0 +1,70 @@
+.hero {
+  background-image: url(/images/hero/background-png.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* height: 100vh; */
+}
+.hero-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0px 0px 120px;
+}
+.hero-section {
+  padding: 125px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 20px;
+  
+}
+.hero-section-text {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 740px;
+  width: 100%;
+}
+.hero-section-title {
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 90px;
+}
+.hero-section-undertitle {
+  font-family: Helvetica Neue;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 40px;
+  letter-spacing: 0%;
+}
+
+.hero-section-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(91.78deg, #1670fa 1.51%, #0d65fb 100.99%);
+  max-width: 270px;
+  width: 100%;
+  gap: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.hero-section-button:hover {
+  background: #F95801;
+}
+.hero-section-button p {
+  color: #fff;
+}
+.hero-section-img-container {
+  max-width: 800px;
+}
+.hero-section-img {
+  width: 100%;
+}
+
+.hero-section-button.undersection{
+  display: none;
+  margin: 0 auto;
+}

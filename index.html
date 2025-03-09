@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <link rel="stylesheet" href="index.css" />
+    <title>GenerGo Solar</title>
+  </head>
+  <body>
+    <div class="pop_up" id="pop_up" style="z-index: 3">
+      <div class="pop_up_container">
+        <div class="pop_up_body">
+          <div class="container-pop">
+            <div class="pop_up_top">
+              <p class="Pop-top-text">Ми обов'язково зв'яжемося з вами</p>
+              <div style="cursor: pointer" id="close_pop_up">
+                <p class="close-x">&times;</p>
+              </div>
+            </div>
+            <p class="pop-up-p-info">
+              Залиште свої контакти або зв'яжіться з нами!
+            </p>
+  
+            <div class="pop-up-row" style="margin: 10px 10px">
+              <a href="+380986968319" class="footer-column-text" style="flex-direction: row;">
+                <h3 class="fs-sm w500">🇺🇦 +38 (098) 696 83 19</h3>
+              </a>
+            </div>
+  
+            <div class="pop-up-icons" style="margin: 10px 10px">
+              <div class="footer-column-row">
+                <div class="icons-social">
+                  <a href="">
+                    <img src="icons/vb.svg" alt="" class="icon-social" />
+                  </a>
+                  <a href="">
+                    <img src="icons/tg.svg" alt="" class="icon-social" />
+                  </a>
+                </div>
+              </div>
+            </div>
+  
+            <form class="form" action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="subject" value="У вас нова заявка з сайту GenerGo Solar" />
+              <input type="hidden" name="access_key" value="10387d0a-e773-4008-b068-a575d146eb9a" />
+  
+              <p class="form-text">Ім'я</p>
+              <input type="text" name="Ім'я" class="input" id="name" />
+              <p class="form-text">Номер телефону</p>
+              <input type="text" name="Номер телефону" class="input" id="gmail" />
+              <button class="redirect-button" id="Submit_letter" onclick="submit()" style="margin-top: 10px"
+                type="submit">
+                <p class="redirect-button-text">ПОДАТИ ЗАЯВКУ</p>
+              </button>
+              <input type="hidden" name="redirect" value="https://genergo.kyiv.ua/thank.html" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="hero">
+      <div class="hero-container">
+        <header class="header">
+          <div class="header-left">
+            <img src="/logo.svg" alt="" class="header-logo" />
+            <div class="header-column-text">
+              <h2 class="header-title w700">GenerGo Solar</h2>
+              <p class="fs-xs w400">може бути слоган</p>
+            </div>
+          </div>
+          <div class="header-right-mobile">
+            <div class="header-right-mobile-burger">
+              <div class="custom-burger">
+                <div class="custom-line"></div>
+                <div class="custom-line"></div>
+                <div class="custom-line"></div>
+              </div>
+            </div>
+          </div>
+          <div class="header-mobile-content">
+            <div class="footer-right-row">
+              <div class="footer-column-text">
+                <h3 class="fs-sm w500 white">м. Київ, вул. Святошинська, 1</h3>
+                <a
+                  href="https://maps.app.goo.gl/byJGf2RdSEPtCwMF9"
+                  class="fs-s w400 flex-footer-dot text-right"
+                >
+                  <div class="orange-dot"></div>
+                  <p class="underline white">Наша адреса</p>
+                </a>
+              </div>
+              <div class="footer-column-text">
+                <h3 class="fs-sm w500 white">🇺🇦 +38 (098) 696 83 19</h3>
+                <a
+                  href="tel:+380986968319"
+                  class="fs-s w400 flex-footer-dot text-right"
+                >
+                  <div class="orange-dot"></div>
+                  <p class="underline white">Зателефонуйте нам</p>
+                </a>
+              </div>
+              <div class="flex-right-with-icons">
+                <a href="https://t.me/GenergoUA1" class="footer-column-text">
+                  <h3 class="fs-sm w500 white">Є питання до нас?</h3>
+                  <div class="fs-s w400 flex-footer-dot text-right">
+                    <div class="orange-dot"></div>
+                    <span class="underline white">Пишіть нам</span>
+                  </div>
+                </a>
+                <div class="icons-social">
+                  <a href="https://msng.link/o?380986968319=vi">
+                    <img src="icons/vb.svg" alt="" class="icon-social" />
+                  </a>
+                  <a href="https://t.me/GenergoUA1">
+                    <img src="icons/tg.svg" alt="" class="icon-social" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="header-right">
+            <div class="header-right-row">
+              <div class="header-column-text">
+                <h3 class="fs-sm w500">🇺🇦 +38 (098) 696 83 19</h3>
+                <a
+                  href="tel:+380986968319"
+                  class="fs-s w400 flex-header-dot text-right"
+                >
+                  <div class="blue-dot"></div>
+                  <p class="underline">Зателефонуйте нам</p>
+                </a>
+              </div>
+              <div class="flex-right-with-icons">
+                <a href="#" class="header-column-text">
+                  <h3 class="fs-sm w500">Є питання до нас?</h3>
+                  <div class="fs-s w400 flex-header-dot text-right">
+                    <div class="blue-dot"></div>
+                    <span class="underline">Пишіть нам</span>
+                  </div>
+                </a>
+                <div class="icons-social">
+                  <a href="">
+                    <img src="icons/vb.svg" alt="" class="icon-social" />
+                  </a>
+                  <a href="">
+                    <img src="icons/tg.svg" alt="" class="icon-social" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <section class="hero-container-section">
+          <section class="hero-section">
+            <div class="hero-section-text">
+              <div class="hero-section-title">
+                <span style="color: #f95801">Сонячні</span> ☀️ <br />
+                станції під ключ!
+              </div>
+              <p class="hero-section-undertitle">
+                <span class="w700" style="color: #1670fa">За 75000 грн.</span>
+                встановіть власну сонячну станцію та забудьте про комунальні
+                платежі
+              </p>
+              <div class="hero-section-button open_pop_up">
+                <p>Замовити зараз</p>
+                <img src="icons/sun.svg" alt="" />
+              </div>
+            </div>
+            <div class="hero-section-img-container">
+              <img
+                src="/images/hero/hero-home.png"
+                alt=""
+                class="hero-section-img"
+              />
+            </div>
+          </section>
+          <div class="hero-section-button undersection open_pop_up">
+            <p>Замовити зараз</p>
+            <img src="icons/sun.svg" alt="" />
+          </div>
+        </section>
+      </div>
+    </section>
+    <section class="our-packets">
+      <div class="our-packets-container">
+        <h2 class="sections-title w700">
+          <span class="orange">Наші</span> пакети
+        </h2>
+        <div class="our-packets-flex">
+          <div class="our-packets-card">
+            <div class="our-packets-card-top">
+              <div class="our-packets-card-title">Мінімум</div>
+              <div class="our-packets-card-info-column">
+                <div class="our-packets-card-info-column-row">
+                  <img src="icons/check.svg" alt="" class="succes-icon" />
+                  <p class="our-packets-card-info-column-row-text">
+                    4 сонячні панелі по 550 Вт
+                  </p>
+                </div>
+                <div class="our-packets-card-info-column-row">
+                  <img src="icons/check.svg" alt="" class="succes-icon" />
+                  <p class="our-packets-card-info-column-row-text">
+                    Гібридний інвертор 3 Квт
+                  </p>
+                </div>
+                <div class="our-packets-card-info-column-row">
+                  <img src="icons/check.svg" alt="" class="succes-icon" />
+                  <p class="our-packets-card-info-column-row-text">
+                    Акумуляторна батарея LiFePo4 7,4 кВт
+                  </p>
+                </div>
+                <div class="our-packets-card-info-column-row">
+                  <img src="icons/check.svg" alt="" class="succes-icon" />
+                  <p class="our-packets-card-info-column-row-text">
+                    Доставка, монтаж та підключення
+                  </p>
+                </div>
+                <div class="our-packets-card-info-column-row">
+                  <img src="icons/check.svg" alt="" class="succes-icon" />
+                  <p class="our-packets-card-info-column-row-text">
+                    Документальне оформлення
+                  </p>
+                </div>
+                <div class="our-packets-card-info-column-row">
+                  <img src="icons/check.svg" alt="" class="succes-icon" />
+                  <p class="our-packets-card-info-column-row-text">
+                    Гарантійне обслуговування
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="our-packets-card-bottom">
+              <div class="our-packets-card-price">
+                <span class="price-info">Ціна:</span> 75 000 грн
+              </div>
+              <div class="order-now-nutton">
+                <p>Замовити зараз</p>
+                <img src="icons/shopping-cart.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="our-packets-card">
+            <div class="our-packets-card-top">
+              <div class="our-packets-card-title">Оптимум</div>
+              <div class="our-packets-card-info-column">
+                <div class="our-packets-card-info-column-row">
+                  <img src="icons/check.svg" alt="" class="succes-icon" />
+                  <p class="our-packets-card-info-column-row-text">
+                    8 сонячні панелі по 550 Вт
+                  </p>
+                </div>
+                <div class="our-packets-card-info-column-row">
+                  <img src="icons/check.svg" alt="" class="succes-icon" />
+                  <p class="our-packets-card-info-column-row-text">
+                    Гібридний інвертор 5,5 Квт
+                  </p>
+                </div>
+                <div class="our-packets-card-info-column-row">
+                  <img src="icons/check.svg" alt="" class="succes-icon" />
+                  <p class="our-packets-card-info-column-row-text">
+                    Акумуляторна батарея LiFePo4 14,7 кВт
+                  </p>
+                </div>
+                <div class="our-packets-card-info-column-row">
+                  <img src="icons/check.svg" alt="" class="succes-icon" />
+                  <p class="our-packets-card-info-column-row-text">
+                    Доставка, монтаж та підключення
+                  </p>
+                </div>
+                <div class="our-packets-card-info-column-row">
+                  <img src="icons/check.svg" alt="" class="succes-icon" />
+                  <p class="our-packets-card-info-column-row-text">
+                    Документальне оформлення
+                  </p>
+                </div>
+                <div class="our-packets-card-info-column-row">
+                  <img src="icons/check.svg" alt="" class="succes-icon" />
+                  <p class="our-packets-card-info-column-row-text">
+                    Гарантійне обслуговування
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="our-packets-card-bottom">
+              <div class="our-packets-card-price">
+                <span class="price-info">Ціна:</span> 95 000 грн
+              </div>
+              <div class="order-now-nutton">
+                <p>Замовити зараз</p>
+                <img src="icons/shopping-cart.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="our-packets-card">
+            <div class="our-packets-card-top">
+              <div class="our-packets-card-title">Максимум</div>
+              <div class="our-packets-card-info-column">
+                <div class="our-packets-card-info-column-row">
+                  <img src="icons/check.svg" alt="" class="succes-icon" />
+                  <p class="our-packets-card-info-column-row-text">
+                    16 сонячні панелі по 550 Вт
+                  </p>
+                </div>
+                <div class="our-packets-card-info-column-row">
+                  <img src="icons/check.svg" alt="" class="succes-icon" />
+                  <p class="our-packets-card-info-column-row-text">
+                    Гібридний інвертор 10 Квт
+                  </p>
+                </div>
+                <div class="our-packets-card-info-column-row">
+                  <img src="icons/check.svg" alt="" class="succes-icon" />
+                  <p class="our-packets-card-info-column-row-text">
+                    Акумуляторна батарея LiFePo4 15 кВт
+                  </p>
+                </div>
+                <div class="our-packets-card-info-column-row">
+                  <img src="icons/check.svg" alt="" class="succes-icon" />
+                  <p class="our-packets-card-info-column-row-text">
+                    Доставка, монтаж та підключення
+                  </p>
+                </div>
+                <div class="our-packets-card-info-column-row">
+                  <img src="icons/check.svg" alt="" class="succes-icon" />
+                  <p class="our-packets-card-info-column-row-text">
+                    Документальне оформлення
+                  </p>
+                </div>
+                <div class="our-packets-card-info-column-row">
+                  <img src="icons/check.svg" alt="" class="succes-icon" />
+                  <p class="our-packets-card-info-column-row-text">
+                    Гарантійне обслуговування
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="our-packets-card-bottom">
+              <div class="our-packets-card-price">
+                <span class="price-info">Ціна:</span> 190 000 грн
+              </div>
+              <div class="order-now-nutton">
+                <p>Замовити зараз</p>
+                <img src="icons/shopping-cart.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="testimonials">
+      <div class="testimonials-container">
+        <img
+          src="images/videos/click-here.png"
+          alt=""
+          class="click-here-test"
+        />
+        <h2 class="sections-title w700">
+          <span class="orange">Відгуки</span> про нашу роботу
+        </h2>
+        <div class="testimonial-slides-container">
+          <div class="testimonial-slides"></div>
+          <div class="testimonials-controlls">
+            <button class="controls-testimonial-prev">&#10094;</button>
+            <div class="indicators-testimonial"></div>
+            <button class="controls-testimonial-next">&#10095;</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="why-sun">
+      <h2 class="sections-title w700">
+        Чому саме
+        <span class="orange">сонячна</span> <br />
+        електростанція?
+      </h2>
+      <div class="why-sun-flex">
+        <div class="flex-row-why-sun">
+          <div class="why-sun-flex-card">
+            <img src="images/why/1.png" alt="" />
+            <p class="why-sun-flex-card-text">
+              Енергонезалежність від міської електромережі
+            </p>
+          </div>
+          <div class="why-sun-flex-card">
+            <img src="images/why/2.png" alt="" />
+            <p class="why-sun-flex-card-text">
+              Економія: зменьшення витрат на електроенергію
+            </p>
+          </div>
+        </div>
+        <div class="flex-row-why-sun">
+          <div class="why-sun-flex-card">
+            <img src="images/why/3.png" alt="" />
+            <p class="why-sun-flex-card-text">
+              Додатковий дохід. Продавайте надлишки електроенергії
+            </p>
+          </div>
+          <div class="why-sun-flex-card">
+            <img src="images/why/4.png" alt="" />
+            <p class="why-sun-flex-card-text">
+              Екологічність - 100% чиста енергія
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="etaps">
+      <h2 class="sections-title w700">
+        Етапи <span class="orange">реалізації</span> проекту
+      </h2>
+      <div class="etaps-container">
+        <div class="etaps-image">
+          <img src="/images/etaps/etaps.png" alt="" />
+        </div>
+        <div class="etaps-info">
+          <div class="etaps-row">
+            <div class="etaps-row-left">
+              <h4 class="etaps-row-left-num">01</h4>
+              <p class="etaps-row-left-text">Обстеження обєкту</p>
+            </div>
+            <div class="etaps-row-right">
+              <img src="icons/time.svg" alt="" class="etaps-row-right-icon" />
+              <p class="etaps-row-right-text">1 день</p>
+            </div>
+          </div>
+          <div class="etaps-row">
+            <div class="etaps-row-left">
+              <h4 class="etaps-row-left-num">02</h4>
+              <p class="etaps-row-left-text">Підготовка рішення</p>
+            </div>
+            <div class="etaps-row-right">
+              <img src="icons/time.svg" alt="" class="etaps-row-right-icon" />
+              <p class="etaps-row-right-text">1 день</p>
+            </div>
+          </div>
+          <div class="etaps-row">
+            <div class="etaps-row-left">
+              <h4 class="etaps-row-left-num">03</h4>
+              <p class="etaps-row-left-text">Проектування</p>
+            </div>
+            <div class="etaps-row-right">
+              <img src="icons/time.svg" alt="" class="etaps-row-right-icon" />
+              <p class="etaps-row-right-text">1 день</p>
+            </div>
+          </div>
+          <div class="etaps-row">
+            <div class="etaps-row-left">
+              <h4 class="etaps-row-left-num">04</h4>
+              <p class="etaps-row-left-text">
+                Комплектація та доставка обладнання
+              </p>
+            </div>
+            <div class="etaps-row-right">
+              <img src="icons/time.svg" alt="" class="etaps-row-right-icon" />
+              <p class="etaps-row-right-text">1 день</p>
+            </div>
+          </div>
+          <div class="etaps-row">
+            <div class="etaps-row-left">
+              <h4 class="etaps-row-left-num">05</h4>
+              <p class="etaps-row-left-text">Монтаж</p>
+            </div>
+            <div class="etaps-row-right">
+              <img src="icons/time.svg" alt="" class="etaps-row-right-icon" />
+              <p class="etaps-row-right-text">1-3 дня</p>
+            </div>
+          </div>
+          <div class="etaps-order-now">
+            <p>Замовити зараз</p>
+            <img src="icons/sun.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="how-work">
+      <h2 class="sections-title w700">
+        Як <span class="orange">працює</span> сонячна станція
+      </h2>
+      <div class="how-work-container">
+        <div class="tabs-title-container">
+          <div class="tabs-title active" data-content="doc">
+            <img
+              src="/icons/white/doc.svg"
+              alt=""
+              class="tabs-title-img"
+              data-content="doc"
+            />
+            <p>Опис</p>
+          </div>
+          <div class="tabs-title" data-content="schema">
+            <img
+              src="/icons/black/schema.svg"
+              alt=""
+              class="tabs-title-img"
+              data-content="schema"
+            />
+            <p>Схема</p>
+          </div>
+        </div>
+        <div class="tabs-content-container">
+          <div class="tabs-content-block flex active" id="doc">
+            <div class="tabs-content-block-cards-row">
+              <div class="tabs-content-block-inner">
+                <img
+                  src="icons/how-work/how-1.svg"
+                  alt=""
+                  class="tabs-content-block-img"
+                />
+                <h3 class="tabs-content-block-title">Сонячні панелі</h3>
+                <p class="tabs-content-block-text">
+                  Вловлюють енергію сонця та перетворюють її на постійний струм.
+                </p>
+              </div>
+              <div class="tabs-content-block-inner">
+                <img
+                  src="icons/how-work/how-2.svg"
+                  alt=""
+                  class="tabs-content-block-img"
+                />
+                <h3 class="tabs-content-block-title">
+                  Інвертор перетворює постійний струм на змінний
+                </h3>
+                <p class="tabs-content-block-text">
+                  Саме такий використовується у вашій оселі чи бізнесі.
+                </p>
+              </div>
+            </div>
+            <div class="tabs-content-block-cards-row">
+              <div class="tabs-content-block-inner">
+                <img
+                  src="icons/how-work/how-3.svg"
+                  alt=""
+                  class="tabs-content-block-img"
+                />
+                <h3 class="tabs-content-block-title">
+                  Споживання електроенергії
+                </h3>
+                <p class="tabs-content-block-text">
+                  Система живить ваші електроприлади, зменшуючи витрати на
+                  комунальні платежі.
+                </p>
+              </div>
+              <div class="tabs-content-block-inner">
+                <img
+                  src="icons/how-work/how-4.svg"
+                  alt=""
+                  class="tabs-content-block-img"
+                />
+                <h3 class="tabs-content-block-title">
+                  Накопичення або продаж надлишку
+                </h3>
+                <p class="tabs-content-block-text">
+                  Ви можете зберігати енергію в акумуляторах або продавати
+                  надлишок у мережу за “зеленим” тарифом.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="tabs-content-block" id="schema" style="margin-top: 20px">
+            <img
+              src="images/how-work/how-work.png"
+              alt=""
+              class="tabs-content-block-image"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="why-choose-us">
+      <h2 class="sections-title w700">
+        Чому <span class="orange">обирають</span> нас
+      </h2>
+      <div class="why-choose-us-container">
+        <div class="why-choose-us-image">
+          <img src="images/why-choose-us/collective.png" alt="" />
+        </div>
+        <div class="why-choose-us-column">
+          <h2 class="why-choose-us-title">
+            Наша компанія <span class="orange">“Genergo”</span>
+          </h2>
+          <p class="why-choose-us-undertitle">
+            Наша компанія “Genergo” була заснована у 2018 році з метою
+            забезпечення ефективних рішень у сфері енергозбереження для
+            домогосподарств і бізнесу
+          </p>
+          <div class="why-choose-us-info">
+            <div class="why-choose-us-info-row">
+              <img
+                src="images/why-choose-us/icon-1.svg"
+                class="why-choose-us-info-row-img"
+              />
+              <p class="why-choose-us-info-row-text">
+                Ми спеціалізуємося на встановленні систем домашнього
+                енергозбереження, які включають інвертори, акумулятори та
+                сонячні панелі
+              </p>
+            </div>
+            <div class="why-choose-us-info-row">
+              <img
+                src="images/why-choose-us/icon-2.svg"
+                class="why-choose-us-info-row-img"
+              />
+              <p class="why-choose-us-info-row-text">
+                За роки нашої роботи ми реалізували більше 250 успішних проектів
+              </p>
+            </div>
+            <div class="why-choose-us-info-row">
+              <img
+                src="images/why-choose-us/icon-3.svg"
+                class="why-choose-us-info-row-img"
+              />
+              <p class="why-choose-us-info-row-text">
+                Нашими клієнтами стали приватні квартири, будинки, підприємства
+                та державні установи, які залишилися задоволеними нашими
+                послугами
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq">
+      <h2 class="sections-title w700">
+        <span class="orange">Часті</span> питання
+      </h2>
+      <div class="faq-container">
+        <div class="faq-container-column">
+          <div class="accordeon-item">
+            <div class="accordeon-item-top-button">
+              <p class="accordeon-content-text">
+                Скільки часу займає встановлення?
+              </p>
+              <div class="icon">
+                <span class="horizontal"></span>
+                <span class="vertical"></span>
+              </div>
+            </div>
+            <div class="accordeon-content text-info">
+              Тривалість монтажу залежить від потужності станції, складності
+              об'єкта та погодних умов. У більшості випадків процес займає
+              кілька днів після узгодження проекту.
+            </div>
+          </div>
+          <div class="accordeon-item">
+            <div class="accordeon-item-top-button">
+              <p class="accordeon-content-text">Як працює "зелений тариф"?</p>
+              <div class="icon">
+                <span class="horizontal"></span>
+                <span class="vertical"></span>
+              </div>
+            </div>
+            <div class="accordeon-content text-info">
+              Це програма, що дозволяє продавати надлишкову електроенергію в
+              загальну мережу за фіксованим тарифом. Щоб підключитися, необхідно
+              укласти договір з оператором системи розподілу та встановити
+              двонаправлений лічильник.
+            </div>
+          </div>
+          <div class="accordeon-item">
+            <div class="accordeon-item-top-button">
+              <p class="accordeon-content-text">
+                Яка потужність станції потрібна для мого будинку?
+              </p>
+              <div class="icon">
+                <span class="horizontal"></span>
+                <span class="vertical"></span>
+              </div>
+            </div>
+            <div class="accordeon-content text-info">
+              Це залежить від середнього споживання електроенергії. Наприклад,
+              для будинку зі споживанням 400 кВт·год на місяць підійде станція
+              на 5-6 кВт.
+            </div>
+          </div>
+          <div class="accordeon-item">
+            <div class="accordeon-item-top-button">
+              <p class="accordeon-content-text">
+                Що робити з надлишком електроенергії?
+              </p>
+              <div class="icon">
+                <span class="horizontal"></span>
+                <span class="vertical"></span>
+              </div>
+            </div>
+            <div class="accordeon-content text-info">
+              Ви можете продавати її за "зеленим тарифом" або використовувати
+              акумуляторні батареї для накопичення енергії.
+            </div>
+          </div>
+          <div class="accordeon-item">
+            <div class="accordeon-item-top-button">
+              <p class="accordeon-content-text">
+                Які є варіанти фінансування або кредитування СЕС?
+              </p>
+              <div class="icon">
+                <span class="horizontal"></span>
+                <span class="vertical"></span>
+              </div>
+            </div>
+            <div class="accordeon-content text-info">
+              На сьогодні є можливість скористатися вигідними пропозиціями на
+              кредитування. Наприклад, Ощадбанк реалізує програму з кредитування
+              під 0% річних на 10 років сумою 480 000грн.Також можливі інші
+              програми від банків партнерів.
+            </div>
+          </div>
+          <div class="accordeon-item">
+            <div class="accordeon-item-top-button">
+              <p class="accordeon-content-text">
+                Чи потрібне обслуговування сонячної станції?
+              </p>
+              <div class="icon">
+                <span class="horizontal"></span>
+                <span class="vertical"></span>
+              </div>
+            </div>
+            <div class="accordeon-content text-info">
+              Так, періодичне обслуговування включає перевірку інвертора, чистку
+              панелей від пилу та снігу, а також діагностику електричних
+              з'єднань.
+            </div>
+          </div>
+          <div class="accordeon-item">
+            <div class="accordeon-item-top-button">
+              <p class="accordeon-content-text">
+                Яка окупність сонячної станції?
+              </p>
+              <div class="icon">
+                <span class="horizontal"></span>
+                <span class="vertical"></span>
+              </div>
+            </div>
+            <div class="accordeon-content text-info">
+              Термін окупності залежить від споживання електроенергії, тарифів,
+              типу встановленої станції та можливості продажу надлишкової
+              електроенергії за "зеленим тарифом". В середньому, він складає від
+              кількох до десяти років.
+            </div>
+          </div>
+        </div>
+        <div class="faq-container-column">
+          <div class="accordeon-item">
+            <div class="accordeon-item-top-button">
+              <p class="accordeon-content-text">
+                Чи потрібен дозвіл для встановлення СЕС?
+              </p>
+              <div class="icon">
+                <span class="horizontal"></span>
+                <span class="vertical"></span>
+              </div>
+            </div>
+            <div class="accordeon-content text-info">
+              Для приватних домогосподарств до 30 кВт спеціальних дозволів
+              зазвичай не потрібно, але необхідно зареєструвати станцію для
+              підключення до мережі та продажу електроенергії. Для промислових
+              СЕС потрібні додаткові погодження.
+            </div>
+          </div>
+
+          <div class="accordeon-item">
+            <div class="accordeon-item-top-button">
+              <p class="accordeon-content-text">
+                Які документи потрібні для підключення СЕС?
+              </p>
+              <div class="icon">
+                <span class="horizontal"></span>
+                <span class="vertical"></span>
+              </div>
+            </div>
+            <div class="accordeon-content text-info">
+              Для підключення необхідно мати документи на власність будинку,
+              договір з енергопостачальником, заяву на приєднання та проект
+              станції.
+            </div>
+          </div>
+
+          <div class="accordeon-item">
+            <div class="accordeon-item-top-button">
+              <p class="accordeon-content-text">
+                Чи працює сонячна станція в похмуру погоду?
+              </p>
+              <div class="icon">
+                <span class="horizontal"></span>
+                <span class="vertical"></span>
+              </div>
+            </div>
+            <div class="accordeon-content text-info">
+              Так, але ефективність зменшується. Навіть у хмарні дні панелі
+              виробляють електроенергію, хоча і в меншій кількості.
+            </div>
+          </div>
+
+          <div class="accordeon-item">
+            <div class="accordeon-item-top-button">
+              <p class="accordeon-content-text">
+                Чи можна додати батарею для зберігання електроенергії?
+              </p>
+              <div class="icon">
+                <span class="horizontal"></span>
+                <span class="vertical"></span>
+              </div>
+            </div>
+            <div class="accordeon-content text-info">
+              Так, можлива інтеграція акумуляторних батарей для автономної
+              роботи або накопичення енергії для використання вночі.
+            </div>
+          </div>
+
+          <div class="accordeon-item">
+            <div class="accordeon-item-top-button">
+              <p class="accordeon-content-text">
+                Як довго працюють сонячні панелі та інвертори?
+              </p>
+              <div class="icon">
+                <span class="horizontal"></span>
+                <span class="vertical"></span>
+              </div>
+            </div>
+            <div class="accordeon-content text-info">
+              Сонячні панелі служать більше 30 років, а інвертори – 10-15 років.
+            </div>
+          </div>
+
+          <div class="accordeon-item">
+            <div class="accordeon-item-top-button">
+              <p class="accordeon-content-text">
+                Що робити в разі виходу з ладу обладнання?
+              </p>
+              <div class="icon">
+                <span class="horizontal"></span>
+                <span class="vertical"></span>
+              </div>
+            </div>
+            <div class="accordeon-content text-info">
+              Наші фахівці проводять діагностику та ремонт. Також на обладнання
+              надається гарантія, і у разі виробничого дефекту заміна
+              здійснюється безкоштовно.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-section-button faq-center-button">
+        <p>Замовити зараз</p>
+        <img src="icons/sun.svg" alt="" />
+      </div>
+      <a href="" class="up-button">
+        <img src="icons/up.svg" alt="" />
+      </a>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-left">
+          <img src="/logo.svg" alt="" class="header-logo" />
+          <div class="footer-column-text">
+            <h2 class="footer-title w700">GenerGo Solar</h2>
+            <p class="fs-xs w400 white">може бути слоган</p>
+          </div>
+        </div>
+        <div class="footer-right">
+          <div class="footer-right-row">
+            <div class="footer-column-text">
+              <h3 class="fs-sm w500 white">м. Київ, вул. Святошинська, 1</h3>
+              <a
+                href="https://maps.app.goo.gl/byJGf2RdSEPtCwMF9"
+                class="fs-s w400 flex-footer-dot text-right"
+              >
+                <div class="orange-dot"></div>
+                <p class="underline white">Наша адреса</p>
+              </a>
+            </div>
+            <div class="footer-column-text">
+              <h3 class="fs-sm w500 white">🇺🇦 +38 (098) 696 83 19</h3>
+              <a
+                href="tel:+380986968319"
+                class="fs-s w400 flex-footer-dot text-right"
+              >
+                <div class="orange-dot"></div>
+                <p class="underline white">Зателефонуйте нам</p>
+              </a>
+            </div>
+            <div class="flex-right-with-icons">
+              <a href="https://t.me/GenergoUA1" class="footer-column-text">
+                <h3 class="fs-sm w500 white">Є питання до нас?</h3>
+                <div class="fs-s w400 flex-footer-dot text-right">
+                  <div class="orange-dot"></div>
+                  <span class="underline white">Пишіть нам</span>
+                </div>
+              </a>
+              <div class="icons-social">
+                <a href="https://msng.link/o?380986968319=vi">
+                  <img src="icons/vb.svg" alt="" class="icon-social" />
+                </a>
+                <a href="https://t.me/GenergoUA1">
+                  <img src="icons/tg.svg" alt="" class="icon-social" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>

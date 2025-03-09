@@ -1,0 +1,43 @@
+.w400 {
+  font-weight: 400;
+}
+.w500 {
+  font-weight: 500;
+}
+.w600 {
+  font-weight: 600;
+}
+.w700 {
+  font-weight: 700;
+}
+.w800 {
+  font-weight: 800;
+}
+.w900 {
+  font-weight: 900;
+}
+
+.fs-xs{
+  font-size: 16px;
+}
+.fs-s{
+  font-size: 18px;
+}
+.fs-sm{
+  font-size: 20px;
+}
+.underline{
+  border-bottom: 1px solid #9a9999;
+}
+.sections-title{
+  text-align: center;
+  font-size: 40px;
+  line-height: 50px;
+}
+.orange{
+  color:#F95801;
+}
+
+.white{
+  color: #ffffff;
+}

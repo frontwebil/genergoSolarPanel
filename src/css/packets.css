@@ -1,0 +1,101 @@
+.our-packets {
+  padding: 60px 0;
+}
+.our-packets-container {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0px 30px;
+}
+
+.our-packets-flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 50px;
+}
+.our-packets-card {
+  max-width: 340px;
+  width: 100%;
+  background: #f6f9ff;
+  border-radius: 20px;
+  padding: 20px 25px 25px;
+}
+.our-packets-card-top {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.our-packets-card-title {
+  font-family: Helvetica Neue;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 70px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.our-packets-card-info-column {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.our-packets-card-info-column-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+.succes-icon {
+  width: 24px;
+  height: 24px;
+}
+.our-packets-card-info-column-row-text {
+  font-family: Helvetica Neue;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0%;
+}
+.our-packets-card-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0px;
+  margin-top: 50px;
+}
+.our-packets-card-price {
+  font-family: Helvetica Neue;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 70px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.price-info {
+  font-family: Helvetica Neue;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 70px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.order-now-nutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(91.78deg, #1670fa 1.51%, #0d65fb 100.99%);
+  max-width: 270px;
+  width: 100%;
+  gap: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.order-now-nutton p {
+  color: #fff;
+  font-weight: 500;
+}
+
+.order-now-nutton:hover {
+  background: #f95801;
+}

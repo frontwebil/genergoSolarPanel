@@ -1,0 +1,22 @@
+@import url("https://fonts.cdnfonts.com/css/helvetica-neue-5");
+
+@import url(src/css/reset.css);
+@import url(src/css/generals.css);
+@import url(src/css/header.css);
+@import url(src/css/hero.css);
+@import url(src/css/packets.css);
+@import url(src/css/testimonials.css);
+@import url(src/css/why-sun.css);
+@import url(src/css/etaps.css);
+@import url(src/css/how-work.css);
+@import url(src/css/why-choose-us.css);
+@import url(src/css/QA.css);
+@import url(src/css/footer.css);
+@import url(src/css/media.css);
+@import url(src/css/popup.css);
+
+* {
+  font-family: "Helvetica Neue", sans-serif!important;
+  color: #3C495D;
+  transition: all ease 0.5s;
+}
