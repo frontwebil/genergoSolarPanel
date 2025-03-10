@@ -360,8 +360,8 @@
   .header-logo {
     width: 130px;
     height: auto;
-}
-  .testimonials-container{
+  }
+  .testimonials-container {
     padding: 60px 20px 0;
   }
   .click-here-test {
@@ -369,7 +369,7 @@
     left: 10px;
     top: 140px;
     max-width: 80px;
-}
+  }
   .etaps-row-right-icon {
     width: 14px;
     height: 14px;
@@ -398,6 +398,9 @@
 }
 
 @media only screen and (max-width: 375px) {
+  .click-here-test {
+    top: 100px;
+  }
   .etaps-row-right {
     max-width: 73px;
     gap: 5px;

@@ -124,3 +124,7 @@
   visibility: visible;
   transform: translateY(0%);
 } 
+
+.header-logo.active{
+  opacity: 0;
+}

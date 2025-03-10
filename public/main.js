@@ -1,12 +1,15 @@
 let testimonials = [
   {
     videoUrl: "/video/1.mp4",
+    poster: "/video/1.png",
   },
   {
     videoUrl: "/video/2.mp4",
+    poster: "/video/2.png",
   },
   {
     videoUrl: "/video/3.mp4",
+    poster: "/video/3.png",
   },
 ];
 
@@ -26,14 +29,17 @@ if (screenWidth2 <= 700) {
   testimonials = [
     {
       videoUrl: "/video-mobile/1.mp4",
+      poster: "/video-mobile/1.png",
     },
     {
       videoUrl: "/video-mobile/2.mp4",
+      poster: "/video-mobile/2.png",
     },
     {
       videoUrl: "/video-mobile/3.mp4",
+      poster: "/video-mobile/3.png",
     },
-  ]
+  ];
 }
 
 let currentSlideIndexTestimonial = 0;
@@ -48,7 +54,7 @@ function initTestimonialSlider() {
   function createTestimonialBlock(testimonial) {
     return `
       <div class="testimonial-block">
-        <video src="${testimonial.videoUrl}" controls></video>
+        <video src="${testimonial.videoUrl}" poster="${testimonial.poster}" controls></video>
       </div>
     `;
   }
@@ -134,6 +140,39 @@ function initTestimonialSlider() {
     }
   }
 
+  // Touch events for swipe functionality
+  let startX, endX;
+
+  function handleTouchStart(event) {
+    if (!isAnimatingTestimonial) {
+      startX = event.touches[0].clientX;
+    }
+  }
+
+  function handleTouchMove(event) {
+    if (!isAnimatingTestimonial) {
+      endX = event.touches[0].clientX;
+    }
+  }
+
+  function handleTouchEnd() {
+    if (!endX || isAnimatingTestimonial) return;
+
+    const deltaX = endX - startX;
+    if (Math.abs(deltaX) > 50) {
+      if (deltaX < 0) {
+        nextSlide(); // Свайп влево - следующий слайд
+      } else {
+        prevSlide(); // Свайп вправо - предыдущий слайд
+      }
+    }
+
+    // Сбрасываем значения
+    startX = null;
+    endX = null;
+  }
+
+  // Стандартные обработчики кликов
   buttonNext.addEventListener("click", nextSlide);
   buttonPrev.addEventListener("click", prevSlide);
   indicators.addEventListener("click", (event) => {
@@ -149,6 +188,11 @@ function initTestimonialSlider() {
       }
     }
   });
+
+  // Добавляем обработчики для свайпа
+  slidesContainer.addEventListener("touchstart", handleTouchStart);
+  slidesContainer.addEventListener("touchmove", handleTouchMove);
+  slidesContainer.addEventListener("touchend", handleTouchEnd);
 
   updateSlides();
 }
@@ -184,7 +228,6 @@ tabsTitleButtons.forEach((el) => {
   });
 });
 
-
 const AccordeonTopButton = document.querySelectorAll(
   ".accordeon-item-top-button"
 );
@@ -206,14 +249,15 @@ AccordeonTopButton.forEach((el) => {
 });
 
 const burger = document.querySelector(".custom-burger");
-const header = document.querySelector('.header');
-const menu = document.querySelector('.header-mobile-content');
+const header = document.querySelector(".header");
+const menu = document.querySelector(".header-mobile-content");
+const logo = document.getElementById("header-logo");
 
 burger.addEventListener("click", function () {
   burger.classList.toggle("active");
   header.classList.toggle("mobile-active");
-  menu.classList.toggle('active')
-  // menu.classList.toggle("active");
+  menu.classList.toggle("active");
+  // logo.classList.toggle("active");
 
   document.body.style.overflow = menu.classList.contains("active")
     ? "hidden"
@@ -239,6 +283,6 @@ closePopUp.addEventListener("click", () => {
 const SubmitLetter = document.getElementById("Submit_letter");
 
 function submit() {
-    popUp.classList.remove("active");
-    popUpEnd.classList.add("active");
+  popUp.classList.remove("active");
+  popUpEnd.classList.add("active");
 }
