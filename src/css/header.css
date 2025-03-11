@@ -120,7 +120,7 @@
   transition: transform 0.3s ease-in-out;
 }
 .header-mobile-content.active{
-  transform: translateY(0%) , translateZ(0);
+  transform: translateY(0%);
 } 
 
 .header-logo.active{
