@@ -116,7 +116,7 @@
   left: 0;
   background: #3c495d;
   width: 100%;
-  transform: translateY(-250%);
+  transform: translateY(-300%);
   transition: transform 0.3s ease-in-out;
 }
 .header-mobile-content.active{
