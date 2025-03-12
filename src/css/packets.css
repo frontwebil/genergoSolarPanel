@@ -4,7 +4,7 @@
 .our-packets-container {
   max-width: 1150px;
   margin: 0 auto;
-  padding: 0px 30px;
+  padding: 0px 20px;
 }
 
 .our-packets-flex {
@@ -14,11 +14,14 @@
   margin-top: 50px;
 }
 .our-packets-card {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
   max-width: 340px;
   width: 100%;
   background: #f6f9ff;
   border-radius: 20px;
-  padding: 20px 25px 25px;
+  padding: 20px 20px 25px;
 }
 .our-packets-card-top {
   display: flex;
